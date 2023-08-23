@@ -16,6 +16,8 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ 
+ * Modification: Arshad Mehmood
  */
 
 
@@ -333,11 +335,11 @@ int main()
     std::cout << std::endl << "============ Intel Extensions: =============" << std::endl;
     PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_gpu_slices, gpu_slices);
     PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_pci_address, pci_address);
-    PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_gpu_eu_count, gpu_eu_count);
-    PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_gpu_eu_simd_width, gpu_eu_simd_width);
     PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_gpu_subslices_per_slice, gpu_subslices_per_slice);
     PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_gpu_eu_count_per_subslice, gpu_eu_count_per_subslice);
+    PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_gpu_eu_count, gpu_eu_count);
     PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_gpu_hw_threads_per_eu, gpu_hw_threads_per_eu);
+    PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_gpu_eu_simd_width, gpu_eu_simd_width);
     PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_max_mem_bandwidth, max_mem_bandwidth);
     PRINT_DEVICE_PROPERTY_EXT(dev, ext_intel_free_memory, free_memory);
 

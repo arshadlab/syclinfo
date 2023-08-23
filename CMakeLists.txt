@@ -1,5 +1,7 @@
+set(CMAKE_CXX_COMPILER icpx)
+cmake_minimum_required(VERSION 3.4)
 project(syclinfo)
-cmake_minimum_required (VERSION 2.6)
+set(CMAKE_CXX_FLAGS "-O3 -fsycl")
+add_executable(syclinfo  syclinfo.cpp)
 
-add_executable(syclinfo syclinfo.cpp)
 
